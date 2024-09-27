@@ -1,5 +1,6 @@
 package spring.timesheet.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +14,8 @@ public class CobaController {
     Integer age = 20;
     Boolean status = true;
 
-    // @Value("${faqih.name}")
-    // private String name;
+//     @Value("${faqih.name}")
+//     private String name;
 
     // @Value("${faqih.age}")
     // private String age;
@@ -25,10 +26,10 @@ public class CobaController {
     @GetMapping("/hello")
     public String getHello() {
         String name = "Faqih";
-        // return "Hello " + name + " dan umurnya " + age + " from CobaController";
+         return "Hello " + name + " from CobaController";
         // return "Hello " + name + "umur " + age + " dan addressnya " + adress + " from
         // CobaController";
-        return name;
+//        return name;
     }
 
     // @PatchMapping("/hello/patch/{id}")
